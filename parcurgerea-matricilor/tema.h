@@ -255,3 +255,23 @@ void sol15() {
 // 3. Se citeste o matrice de maxim 20 x 1000 de elemente numere intregi de la tastatura.
 
 // a) Sa se schimbe intre ele liniile matricei astfel incat prima coloana sa fie ordonata crescator ???
+
+// b) Care este numarul de elemente din matrice ce au in componenta doar cifre binare?
+
+void sol16() {
+
+	int a[10][10]{ {5, 4, 98, 10, 55}, { 17, 13, 39 ,24, 55}, {17, 11, 3, 13, 5} };
+	int l = 3;
+	int c = 5;
+
+	cout << "Numarul de elemente din matrice ce au in componenta doar cifre binare este: " << numarElementeComponentaBinara(a, l, c) << endl;
+
+}
+
+
+// c) Realizati un nou vector in care sa se regaseasca toate elementele superprime, transformate in baza 16. ???
+
+// d) Afisati elemente matricei, pe o linie, in ordinea din desen:
+// ------>
+// <------
+// ------>

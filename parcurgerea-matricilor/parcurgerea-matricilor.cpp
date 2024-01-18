@@ -3,7 +3,7 @@
 
 int main()
 {
-	sol14();
+	cout << componentaBinara(1011);
 
 }
 

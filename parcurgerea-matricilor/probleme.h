@@ -476,3 +476,49 @@ int frecventaNrMax(int a[10][10], int l, int c, int f[]) {
 	}
 	return numar; 
 }
+
+int nrCif(int nr) {
+
+	int ct = 0;
+
+	while (nr != 0) {
+
+		ct++;
+		nr = nr / 10;
+	}
+	return ct;
+}
+
+bool componentaBinara(int nr) {
+
+	int ct = 0;
+
+	while (nr > 0) {
+		int uc = nr % 10;
+		if (uc == 1 || uc == 0) {
+			ct++;
+		}
+		nr = nr / 10;
+	}
+	
+	if (nrCif(nr) == ct) {
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+
+int numarElementeComponentaBinara(int a[10][10], int l, int c) {
+
+	int ct = 0;
+
+	for (int i = 0; i < l; i++) {
+		for (int j = 0; j < c; j++) {
+			if (componentaBinara(a[i][j]) == true) {
+				ct++;
+			}
+		}
+	}
+	return ct;
+}
