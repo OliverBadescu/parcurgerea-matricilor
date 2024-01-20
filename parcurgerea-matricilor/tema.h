@@ -271,7 +271,7 @@ void sol16() {
 
 // c) Realizati un nou vector in care sa se regaseasca toate elementele superprime, transformate in baza 16. ???
 
-// d) Afisati elemente matricei, pe o linie, in ordinea din desen:
+// d) Afisati elemente matricei, pe o linie, in ordinea din desen:   ???
 // ------>
 // <------
 // ------>
